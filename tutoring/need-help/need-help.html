@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Paperized!</title>
+    <link href="need-help.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+
+    <!-- Navbar: -->
+    <div class="navbar">
+        <a href="../../about/about.html" class="logolink">
+          <img src="../../photos/logo-small.jpg" alt="logo" style="height:60px;">
+        </a>
+        <a class="active" href="../../about/about.html">About</a> 
+        <a href="../../scholarship/scholarship.html">Scholarships</a>
+
+      <!-- tutoring dropdown -->
+      <div class="droptutoring">
+        <button class="droptutorbtn"><a href="../tutoring.html">Tutoring</a></button>
+          <div class="dropdown-tutor-content">
+            <a href="../mission/mission.html">Mission</a>
+            <a href="../volunteer/volunteer.html">Volunteer</a>
+            <a href="../need-help/need-help.html">Need help?</a>
+            <a href="../note-submission/note-submission.html">Note submission</a>
+            <a href="../policy/policy.html">Policy</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- Side tabs -->
+    <div class="tab">
+      <button class="tablinks" onclick="openSubject(event, 'Math')">Math</button>
+      <button class="tablinks" onclick="openSubject(event, 'Science')">Science</button>
+      <button class="tablinks" onclick="openSubject(event, 'Literature')">Literature</button>
+    </div>
+
+    <div id="Math" class="tabcontent">
+      <h3>Math</h3>
+      <p>This is the place for you to ask for help and post your questions! Once you have done that, the perfect volunteer tutor will be able to find and help you! The developement is still in progress, but we are eager to help you, so please wait for our next update!</p>
+    </div>
+
+    <div id="Science" class="tabcontent">
+      <h3>Science</h3>
+      <p>This is the place for you to ask for help and post your questions! Once you have done that, the perfect volunteer tutor will be able to find and help you! The developement is still in progress, but we are eager to help you, so please wait for our next update!</p>
+    </div>
+
+    <div id="Literature" class="tabcontent">
+      <h3>Literature</h3>
+      <p>This is the place for you to ask for help and post your questions! Once you have done that, the perfect volunteer tutor will be able to find and help you! The developement is still in progress, but we are eager to help you, so please wait for our next update!</p>
+    </div>
+
+  <script src="need-help.js"></script>
+  </body>
+</html>

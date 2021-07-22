@@ -1,0 +1,299 @@
+/* NAVIGATION BAR */
+.navbar{
+  background-color: #4582C2;
+  display: flex;
+  align-items: center;
+}
+
+/* styling the links in navbar */
+.navbar a {
+  margin: 0%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #8AD0F3;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #23395B;
+  color: white;
+}
+
+/* DROPDOWN TUTORING BUTTON */
+.droptutorbtn {
+  background-color: #4582C2;
+  color: white;
+  padding: 22px;
+  font-size: 16px;
+  border: none;
+}
+
+/* positioning of the button */
+.droptutoring {
+  position: relative;
+  display: inline-block;
+}
+/* styling the dropdown-content */
+.dropdown-tutor-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the tutoring dropdown */
+.dropdown-tutor-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover*/
+.dropdown-tutor-content a:hover {background-color: #ddd;}
+
+/*Show the dropdown menu on hover */
+.droptutoring:hover .dropdown-tutor-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+
+/* END OF NAV */
+
+/* SITE CSS EXCLUDING NAV */
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+}
+
+/* big message  */
+.concept {  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background-color: #8AD0F3; 
+  padding-top: none;
+  padding-bottom: none;
+
+  padding-right: 150px;
+  padding-left: 150px;
+  border:none;
+}
+
+.ourTeam {
+  background-color: #B3B7EE;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.helpBtnSec {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+.helpBtn {
+  font-size: 30px;
+  flex: .5;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: #7180AC;
+  transition-duration: .4s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.helpBtn:hover {
+  text-decoration: none;
+  background-color: #B3B7EE;
+  color: black;
+}
+
+
+
+.ourTeamImages {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.outTeamHeader{
+  display: flex;
+  justify-content: center;
+}
+
+.marginbased {
+  margin-right: 300px;
+  margin-left: 200px;
+}
+
+/*hoverS */
+/* ke-jhade hover */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 100px;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* ali hover */
+.acontainer {
+  position: relative;
+  width: 50%;
+}
+
+.aoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 100px;
+}
+
+.acontainer:hover .aoverlay {
+  opacity: .8;
+}
+
+.atext {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* athena hover */
+.atcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.atoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 100px;
+}
+
+.atcontainer:hover .atoverlay {
+  opacity: .8;
+}
+
+.attext {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* rugile hover */
+.rcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.roverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 100px;
+}
+
+.rcontainer:hover .roverlay {
+  opacity: .8;
+}
+
+.rtext {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
