@@ -17,4 +17,3 @@ function myFunction() {
       }
   }
 }
-// as of 21/7 not sure why the search function still weird but working on it

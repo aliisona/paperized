@@ -1,17 +1,26 @@
 /* NAVIGATION BAR */
+
 .navbar{
   background-color: #4582C2;
+  display: flex;
+  align-items: center;
 }
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: none;
   font-size: 17px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -26,12 +35,12 @@
   color: white;
 }
 
-/* dropdown tutoring button */
+/* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4582C2;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 17px;
   border: none;
 }
 
@@ -65,4 +74,132 @@
 .droptutoring:hover .dropdown-tutor-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droptutoring:hover .droptutorbtn {background-color: #3e8e41;} 
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+
+/* END OF NAV */
+
+
+/* SIDE TABS */
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 640px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 20px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 640px;
+}
+/* END OF SIDE TABS */
+
+/* IMPUTS */
+.inputs{
+  background-color: rgba(153, 214, 245, 0.2);
+  border: solid #4582C2;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.insideContainer{
+  background-color: rgba(153, 214, 245, 0.2);
+  border: solid #4582C2;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.submitBtn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  background-color: #7180AC;
+  transition-duration: 0.4s;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: #B3B7EE;
+  color: black;
+}
+/* END OF INPUTS */
+
+
+/* START OF FOOTER */
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 20px;
+}
+
+/* END OF FOOTER */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
+}

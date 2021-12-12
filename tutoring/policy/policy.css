@@ -1,17 +1,25 @@
 /* NAVIGATION BAR */
 .navbar{
   background-color: #4582C2;
+  display: flex;
+  align-items: center;
 }
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: none;
   font-size: 17px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -26,12 +34,12 @@
   color: white;
 }
 
-/* dropdown tutoring button */
+/* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4582C2;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 17px;
   border: none;
 }
 
@@ -65,47 +73,60 @@
 .droptutoring:hover .dropdown-tutor-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droptutoring:hover .droptutorbtn {background-color: #3e8e41;} 
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+/* END OF NAV */
 
 h1{
 text-align: center;
-
+font-size: 50px;
+color: white;
+border: solid; 
+background-color: #8AD0F3;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
 
-.first{
+p {
 text-align: center;
-font-size: 30px;
-margin-left: 10px;
-margin-right: 15px;
-}
-
-.second{
-text-align: center;
-font-size: 30px;
-margin-left: 10px;
-margin-right: 15px;
-}
-
-.third{
-text-align: center;
-font-size: 30px;
-margin-left: 10px;
-margin-right: 15px;
-}
-
-.fourth{
-text-align: center;
-font-size: 30px;
-margin-left: 10px;
-margin-right: 15px;
-}
-
-.fifth{
-text-align: center;
-font-size: 30px;
-margin-left: 10px;
-margin-right: 15px;
+font-size: 25px;
+margin-left: 400px;
+margin-right: 400px;
 }
 
 
+h2{
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  border: solid; 
+  background-color: #8AD0F3;
+}
+
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 20px;
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
+}

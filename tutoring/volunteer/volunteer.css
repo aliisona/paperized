@@ -1,17 +1,25 @@
 /* NAVIGATION BAR */
 .navbar{
   background-color: #4582C2;
+  display: flex;
+  align-items: center;
 }
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: none;
   font-size: 17px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -26,12 +34,12 @@
   color: white;
 }
 
-/* dropdown tutoring button */
+/* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4582C2;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 17px;
   border: none;
 }
 
@@ -65,4 +73,77 @@
 .droptutoring:hover .dropdown-tutor-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droptutoring:hover .droptutorbtn {background-color: #3e8e41;} 
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+/* END OF NAV */
+
+
+/* GENERAL SITE CSS*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.margintext {
+  margin-right: 200px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+/* END OF GENERAL SITE CSS */
+
+/* START OF SITE-SPECIFIC CSS */
+.firstHeader{
+  background-color: #8AD0F3;
+  color: white;
+  font-size: 50px;
+  padding: 50px;
+}
+
+.secondHeader{
+  background-color: #b3b7EE;
+  color: white;
+  font-size: 50px;
+  padding: 50px;
+}
+
+.formLink{
+  color: #4582C2;
+  text-decoration: underline;
+}
+
+/* END OF SITE-SPECIFIC CSS */
+
+
+/* footer start */
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 30px;
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+/* footer end */

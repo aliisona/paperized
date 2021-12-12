@@ -1,17 +1,25 @@
 /* NAVIGATION BAR */
 .navbar{
   background-color: #4582C2;
+  display: flex;
+  align-items: center;
 }
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: none;
   font-size: 17px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -26,12 +34,12 @@
   color: white;
 }
 
-/* dropdown tutoring button */
+/* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4582C2;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 17px;
   border: none;
 }
 
@@ -65,7 +73,8 @@
 .droptutoring:hover .dropdown-tutor-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droptutoring:hover .droptutorbtn {background-color: #3e8e41;} 
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+/* END OF NAV */ 
 
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -98,4 +107,60 @@
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 25px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+.quote {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background-color: #B6E1F7; 
+  padding-top: none;
+  padding-bottom: none;
+
+  padding-right:250px;
+  padding-left: 250px;
+  border:none;
+}
+
+.tutorHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
 }

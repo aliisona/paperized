@@ -19,3 +19,24 @@ function openSubject(evt, subject) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+
+var container = $(".container"); 
+
+var submit= $(".submitBtn");
+submit.on("click", addOn);
+
+function addOn(){
+  container.text("");
+  var name= $(".name").val(); 
+  var email= $(".email").val();
+  var topic=$('.topic').val();
+  var date=$('.date').val();
+  var sources=$('.sources').val();
+  var file=$('.file').val();
+
+  console.log(`<div> <p> Thank you ${name} for contributing to our awesome community!</p> </div>`);
+  container.append(`<div class="insideContainer"> <p> Thank you ${name} for contributing to our awesome community!</p> </div>`);
+ 
+  event.preventDefault();
+}

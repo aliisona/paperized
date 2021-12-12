@@ -1,4 +1,5 @@
 /* NAVIGATION BAR */
+
 .navbar{
   background-color: #4582C2;
   display: flex;
@@ -7,13 +8,19 @@
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  border: none;
+  font-size: 15px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -31,9 +38,9 @@
 /* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
   background-color: #4582C2;
-  color: white;
-  padding: 22px;
-  font-size: 16px;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 15px;
   border: none;
 }
 
@@ -71,49 +78,91 @@
 
 /* END OF NAV */
 
-/* SITE CSS EXCLUDING NAV */
+/* GENERAL SITE CSS*/
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0px;
 }
 
-/* big message  */
+html {
+   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.marginBased {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+/* END OF GENERAL SITE CSS */
+
+/* ATTENTION GRABBERS  */
 .concept {  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 150px;
+  font-size: 100px;
   display: flex;
   flex-wrap: wrap;
   color: white;
   background-color: #8AD0F3; 
-  padding-top: none;
-  padding-bottom: none;
-
-  padding-right: 150px;
-  padding-left: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-right:250px;
+  padding-left: 250px;
   border:none;
 }
 
-.ourTeam {
-  background-color: #B3B7EE;
-  padding: 10px;
+.quote {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  margin: 0px;
+  flex-wrap: wrap;
+  color: white;
+  background-color: #B6E1F7; 
+  padding-top: none;
+  padding-bottom: none;
+
+  padding-right:250px;
+  padding-left: 250px;
+  border:none;
+}
+/* START OF ATTENTION GRABBERS */
+
+/* START OF WHY */
+.goalProbH {
+  font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-size: 50px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
 }
 
-img {
-  width: 200px;
-  height: 200px;
+.goalProbT {
+  margin-right: 150px;
+  margin-left: 150px;
+  font-size: 25px;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 90px;
 }
+/* END OF WHY */
 
+
+/* Start of help buttons */
 .helpBtnSec {
   display: flex;
   justify-content: center;
   padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .helpBtn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   flex: .5;
   text-decoration: none;
@@ -127,34 +176,61 @@ img {
   transition-duration: .4s;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .helpBtn:hover {
   text-decoration: none;
   background-color: #B3B7EE;
   color: black;
 }
+/* END OF BUTTONS */
 
+/* OUR TEAM CSS */
 
+.ourTeam {
+  background-color: #B3B7EE;
+  padding: 20px;
+  height: 450px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  order: 5;
+  margin: 0px;
+}
+
+.ourTeamFolder{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-around;
+  align-items: space-around;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
 
 .ourTeamImages {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-items: space-around;
+  align-content: space-around;
+  height: 300px;
+  width: 300px;
 }
 
-.outTeamHeader{
+.ourTeamOverlay {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+} 
+
+.ourTeamHeader{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  font-size: 60px; 
+  padding: 5px;
+  flex-basis: 100%;
 }
-
-.marginbased {
-  margin-right: 300px;
-  margin-left: 200px;
-}
+/* END OF OUR TEAM CSS */
 
 /*hoverS */
 /* ke-jhade hover */
@@ -162,25 +238,22 @@ a {
   position: relative;
   width: 50%;
 }
-
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  border-radius: 100px;
+  border-radius: 300px;
 }
-
 .container:hover .overlay {
   opacity: .8;
 }
-
 .text {
   color: white;
   font-size: 10px;
@@ -197,25 +270,22 @@ a {
   position: relative;
   width: 50%;
 }
-
 .aoverlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  border-radius: 100px;
+  border-radius: 300px;
 }
-
 .acontainer:hover .aoverlay {
   opacity: .8;
 }
-
 .atext {
   color: white;
   font-size: 10px;
@@ -232,25 +302,22 @@ a {
   position: relative;
   width: 50%;
 }
-
 .atoverlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  border-radius: 100px;
+  border-radius: 300px;
 }
-
 .atcontainer:hover .atoverlay {
   opacity: .8;
 }
-
 .attext {
   color: white;
   font-size: 10px;
@@ -267,25 +334,22 @@ a {
   position: relative;
   width: 50%;
 }
-
 .roverlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  border-radius: 100px;
+  border-radius: 300px;
 }
-
 .rcontainer:hover .roverlay {
   opacity: .8;
 }
-
 .rtext {
   color: white;
   font-size: 10px;
@@ -297,3 +361,115 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* END OF HOVER IMAGES */
+
+/* START OF STATS CSS */
+.whyH {
+  font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-size: 50px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.statsText {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  align-content: space-around;
+  justify-content: center;
+  text-align: center;
+}
+
+.riseBy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width:400px;
+  height: 250px;
+  border-style:none;
+  border-width:1px;
+}
+
+.riseByImage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 50px;
+
+}
+
+.aPerce {
+  display: flex; 
+  justify-content: center;
+}
+
+.rising {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+.percentage {
+  width:400px;
+  height: 250px;
+  border-style:none;
+  border-width:1px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* STATS END */
+
+/* FOOTER START */
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 20px;
+}
+
+.topBtn {
+  background-color: #4582C2;
+  color: white;
+  font-family: 'Montserrat';
+  border: none; 
+  font-size: 15px;
+  padding: 5px;
+  height: 100px;
+  text-decoration: none;
+
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+/* footer end */

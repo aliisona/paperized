@@ -3,26 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Paperized!</title>
+    <title>Paperized</title>
+    <link rel="shortcut icon" type="image/jpg" href="../photos/favicon.jpg"/>
     <link href="about.css" rel="stylesheet" type="text/css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+
     
   </head>
   <body>
+    <div id = "top">
+    </div>
 
     <!-- Navbar: -->
     <div class="navbar">
         <a href="../about/about.html" class="logolink">
           <img src="../photos/logo-small.jpg" alt="logo" style="height:60px;">
         </a>
-        <a class="active" href="../about/about.html">About</a> 
+        <a class="active" href="../about/about.html">About</a>
         <a href="../scholarship/scholarship.html">Scholarships</a>
 
       <!-- tutoring dropdown -->
       <div class="droptutoring">
         <button class="droptutorbtn"><a href="../tutoring/tutoring.html">Tutoring</a></button>
           <div class="dropdown-tutor-content">
-            <a href="../tutoring/mission/mission.html">Mission</a>
             <a href="../tutoring/volunteer/volunteer.html">Volunteer</a>
             <a href="../tutoring/need-help/need-help.html">Need help?</a>
             <a href="../tutoring/note-submission/note-submission.html">Note submission</a>
@@ -30,6 +38,7 @@
           </div>
       </div>
     </div>
+    <!-- end of tutoring dropdown -->
 
     
 
@@ -39,68 +48,123 @@
         <p class = "concept"> Allowing students across the world to have free access to educational resources. </p>
 
       <!-- outlining the problem under the big message  -->
-      <div class = "underNav">
+    <div class = "underNav">
       
-       <!-- buttons for tutoring/ scholarships/ learn more -->
-     <div class = "helpBtnSec">
-      <button class = "helpBtn creatorBTN"> 
-          <a href =  "#ourTeam" >Meet Our Creators </a>  </button>
-      <button class = "helpBtn tutoringBTN"> 
-          <a href="../tutoring/tutoring.html"> Tutoring </a> </button>
-      <button class = "helpBtn scholarshipBTN"> 
-         <a href="../scholarship/scholarship.html"> Scholarships </a>  </button>
-    
-    </div>
-    <!-- end of buttons -->
-
-      <h1> Why? </h2>
-        <li> Accessibility <br>
-            Students all over the world have trouble accessing learning resources due to monetary limitations or restrictions. According to NBC, tutoring can cost up to tens of thousands USD a year. The tutoring market is expected to rise to 200K million by 2026, only making learning more expensive. </li>
-        <li> Online <br>
-            Existing resources are messy and students spend more time  filtering and searching through than actually reading an easy-to-use site. </li>
-        <li> Inclusiveness <br>
-            Sites that do exist do not compensate for students who have trouble reading in certain colors and presented fonts. </li>
- 
-    <!-- Our team CODE -->
-    <h1 class = "ourTeamHeader"> Our Team <h1>
-    <div class = "ourTeam">
-      <div class = "container">
-        <img class = "image ourTeamImages" src = "../photos/ke-jhade crop.png">
-        <div class = "overlay">
-          <div class = "text">  <h2> Ke-Jhade Brown </h2> <br> 📍 NEW JERSEY, UNITED STATES <br> 17 y/o, senior who loves computer science. I love cheese! </div>
-        </div>
+        <!-- buttons for tutoring/ scholarships/ learn more -->
+      <div class = "helpBtnSec">
+        <button class = "helpBtn creatorBTN"> 
+            <a href =  "#ourTeamID" >CREATORS </a>  </button>
+        <button class = "helpBtn tutoringBTN"> 
+            <a href="../tutoring/tutoring.html"> TUTORING </a> </button>
+        <button class = "helpBtn scholarshipBTN"> 
+          <a href="../scholarship/scholarship.html"> SCHOLARSHIPS </a>  </button>
       </div>
+      <!-- end of buttons -->
 
-      <div class = "acontainer">
-          <img class = "aimage ourTeamImages" src = "../photos/ali crop.png">
-          <div class = "aoverlay">
-            <div class = "atext">  <h2> Alisona Le </h2> <br>  <p> 📍 NEW JERSEY, UNITED STATES <br> 15 y/o, sophomore studying engineering! My favorite language is Java! </p> </div>
+      <div class = "goalProb marginBased">
+        <h1 class = "goalProbH" > Our Goals </h1>
+          <div class = "goalProbT">
+            <div class = "points">
+              <li> Accessibility <br>
+                  Students all over the world have trouble accessing learning resources due to monetary limitations or restrictions. According to NBC, tutoring can cost up to tens of thousands USD a year. The tutoring market is expected to rise to 200K million by 2026 in the US, only making learning more expensive. <br> <br> </li>
+              <li> Online <br>
+                  Existing resources are messy and students spend more time  filtering and searching through than actually reading an easy-to-use site. <br> <br> </li>
+              <li> Inclusiveness <br> 
+                  Sites that do exist do not compensate for students who have trouble reading in certain colors and presented fonts. <br> </li>
+            </div>
           </div>
       </div>
-       
+    
+    </div>
 
-       <div class = "atcontainer">
-          <img class = "atimage ourTeamImages" src = "../photos/athena crop.png">
-          <div class = "atoverlay">
-            <div class = "attext">  <h2> Athena Siow </h2><p> 📍 KUALA LUMPUR, MALAYSIA <br> 16 y/o, 4th form student. I have a terrapin named MyTurtle!🐢 </p> </div>
-          </div> 
+    <!-- Our team CODE -->
+    
+    <div id = "ourTeamID" class = "ourTeam">
+      <h1 class = "ourTeamHeader ourTeamTEXT"> MEET THE TEAM </h1> 
+      <section class = "ourTeamFolder">
+        
+        <div class = "container">
+          <img class = "image ourTeamImages" src = "../photos/ke-jhade crop.png">
+          <div class = "overlay ourTeamOverlay">
+            <div class = "text">  <h2> Ke-Jhade Brown </h2> <br> 📍 NEW JERSEY, UNITED STATES <br> 17 y/o, senior who loves computer science. I love cheese! </div>
+          </div>
+        </div>
+
+        <div class = "acontainer">
+            <img class = "aimage ourTeamImages" src = "../photos/ali crop.png">
+            <div class = "aoverlay ourTeamOverlay">
+              <div class = "atext">  <h2> Alisona Le </h2> <br>  <p> 📍 NEW JERSEY, UNITED STATES <br> 15 y/o, sophomore studying engineering! My favorite language is Java! </p> </div>
+            </div>
         </div>
         
-      <div class = "rcontainer">
-        <img class = "rimage ourTeamImages" src = "../photos/rugile crop.png">
-        <div class = "roverlay">
-          <div class = "rtext">  
-        <h2> Rugilė Urniežiūtė</h2> <p> 📍 LITHUANIA <br> 16y/o junior in high school who likes playing piano ;) </p></div>
-        </div>
-        </div>  
+
+        <div class = "atcontainer">
+            <img class = "atimage ourTeamImages" src = "../photos/athena crop.png">
+            <div class = "atoverlay ourTeamOverlay">
+              <div class = "attext">  <h2> Athena Siow </h2><p> 📍 KUALA LUMPUR, MALAYSIA <br> 16 y/o, 4th form student. I have a terrapin named MyTurtle!🐢 </p> </div>
+            </div> 
+          </div>
+          
+        <div class = "rcontainer">
+          <img class = "rimage ourTeamImages" src = "../photos/rugile crop.png">
+          <div class = "roverlay ourTeamOverlay">
+            <div class = "rtext">  
+          <h2> Rugilė Urniežiūtė</h2> <p> 📍 LITHUANIA <br> 16y/o junior in high school who likes playing piano ;) </p></div>
+          </div>
+        </div> 
+      </section>
+    
+
     </div>
+ 
     <!-- END OF TEAM CODE -->
-  
-   
 
+    <!-- statistics code -->
+    <div class = "stats marginBased">
+      <h1 class = "whyH"> Why Paperized? </h1>
+      <div class = "rising">
+
+        <p class = "statsText riseBy rising"> By the year 2027, the global market for tutoring is expected to reach over $279.3 BILLION USD (Intrado). Thousands of USD is spent yearly on a single-student's tutoring costs alone. </p>
+
+        <img class = "rising riseByImage" src = "../photos/rising arrow.png">
+      </div>
+    </div>
+
+    <center><p class = "aPerce percentage statsText"> In America, 42% of parents and guardians feel that it is necessary to recieve private tutoring (Nais.org), however a large percentage of parents and guardians cannot afford the rising costs of a growing market. </p> </center>
+
+    <!-- end of statistics code -->
+
+    <!-- quote code -->
+    <div class = "quote">
+      <p> "Education is the most powerful weapon which you can use to change the world." <br> Nelson Mandela</p>
+    </div>
+    <!-- end of quote code -->
+
+    <!-- start of footer -->
+    <div class = "footer">
+      <a href="../about/about.html" class="logolink">
+          <img src="../photos/logo-small.jpg" alt="logo" style="height:100px;">
+      </a>
+      <p class = "footerTrademark"> Trademarked 2021 ® </p>
+      <button class = "topBtn"> 
+            <a href =  "#top" >Take me back to the top! </a>  </button>
+            
+      <a href = "https://www.instagram.com/paperizedstudy/"> 
+      <img class = "logos" src = "../photos/instagram.png">
+      </a>
+
+      <!-- facebook link in progress -->
+      <a href = "https://www.facebook.com/"> 
+      <img class = "logos" src = "../photos/facebook icon.png">
       </a> 
-      <script src="about.js"></script>
 
-  </div>
+      <a href = "paperizedstudy@gmail.com"> 
+      <img class = "logos" src = "../photos/gmail logo.png">
+      </a> 
+
+      
+    </div>
+   
+    <script src="about.js"></script>
   </body>
 </html>

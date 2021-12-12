@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Paperized</title>
+    <link rel="shortcut icon" type="image/jpg" href="../../photos/favicon.jpg"/>
     <link href="tutoring.css" rel="stylesheet" type="text/css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+      <link href="about.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
   </head>
   <body>
@@ -14,14 +21,13 @@
         <a href="../about/about.html" class="logolink">
           <img src="../photos/logo-small.jpg" alt="logo" style="height:60px;">
         </a>
-        <a class="active" href="../about/about.html">About</a> 
+        <a href="../about/about.html">About</a> 
         <a href="../scholarship/scholarship.html">Scholarships</a>
 
       <!-- tutoring dropdown -->
       <div class="droptutoring">
-        <button class="droptutorbtn"><a href="../tutoring/tutoring.html">Tutoring</a></button>
+        <button class="droptutorbtn" class="active"><a href="../tutoring/tutoring.html">Tutoring</a></button>
           <div class="dropdown-tutor-content">
-            <a href="../tutoring/mission/mission.html">Mission</a>
             <a href="../tutoring/volunteer/volunteer.html">Volunteer</a>
             <a href="../tutoring/need-help/need-help.html">Need help?</a>
             <a href="../tutoring/note-submission/note-submission.html">Note submission</a>
@@ -30,7 +36,13 @@
       </div>
     </div>
 
-    <h1> Tutoring: </h1>
+    <div class = "quote">
+      <p> “There is no failure. Only feedback.” <br> — Robert Allen </p>
+    
+    </div>
+
+    <h1  class = "tutorHeader"> Tutoring: </h1>
+    <p class = "tutorText"> Over 50% of parents and guardians feel at comfort with a tutor. Due to a rising costs in the market of private tutors globally, many students cannot afford them, however it is our mission to never make anyone feel left behind because of something out of their control. Through volunteer tutors/ submitted notes, anyone can learn a new topic at the face of any device! Volunteers may contact us through the volunteer page or through an Instagram DM! Please note that all volunteers must read through our policy page before any commitment. </p>
     <!-- hold on still analysing the code i took from w3schools -->
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subjects/topics here">
 
@@ -49,6 +61,30 @@
   <li><a href="#">Reading level 1</a></li>
   <li><a href="#">Reading level 2</a></li>
 </ul>
+
+   <!-- start of footer -->
+    <div class = "footer">
+      <a href="../about/about.html" class="logolink">
+          <img src="../../photos/logo-small.jpg" alt="logo" style="height:60px;">
+      </a>
+      <p class = "footerTrademark"> Trademarked 2021 ® </p>
+
+      <a href = "https://www.instagram.com/paperizedstudy/"> 
+      <img class = "logos" src = "../../photos/instagram.png">
+      </a>
+
+      <!-- facebook link in progress -->
+      <a href = "https://www.facebook.com/"> 
+      <img class = "logos" src = "../../photos/facebook icon.png">
+      </a> 
+
+      <a href = "paperizedstudy@gmail.com"> 
+      <img class = "logos" src = "../../photos/gmail logo.png">
+      </a> 
+
+    </div>
+    <!-- end of footer -->
+
   <script src="tutoring.js"></script>
   </body>
 </html>

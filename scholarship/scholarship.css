@@ -1,21 +1,30 @@
-body{
-  background-color: white;
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
 
 /* NAVIGATION BAR */
 .navbar{
   background-color: #4582C2;
+  display: flex;
+  align-items: center;
 }
 
 /* styling the links in navbar */
 .navbar a {
-  margin: 0%;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: none;
   font-size: 17px;
+}
+
+.navbar .logolink{
+  margin: 0px;
+  float: left;
+  padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -30,12 +39,12 @@ body{
   color: white;
 }
 
-/* dropdown tutoring button */
+/* DROPDOWN TUTORING BUTTON */
 .droptutorbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4582C2;
+  color: #f2f2f2;
+  padding: 8px;
+  font-size: 17px;
   border: none;
 }
 
@@ -69,7 +78,44 @@ body{
 .droptutoring:hover .dropdown-tutor-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droptutoring:hover .droptutorbtn {background-color: #3e8e41;} 
+.droptutoring:hover .droptutorbtn {background-color: #8AD0F3;} 
+
+/* END OF NAV */ 
+
+/* .content {
+  display: flex;
+} */
+
+  .quote {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding-top: none;
+  padding-bottom: none;
+ 
+  border:none;
+}
+
+.quote1 {
+  background-color: #b3b7EE;
+  width: 65%;  
+  padding:100px;
+}
+
+.quote2 {
+  background-color: #7180AC; 
+  width: 35%;  
+  padding:100px;
+}
+
+
+
+.scholarships {
+  margin: 25px;
+
+}
 
 /* HEADER*/
 h1{
@@ -116,4 +162,28 @@ h1{
 
 #scholarshipList li a:hover:not(.header) {
   background-color: #eee;
+}
+
+.footer {
+  background-color: #4582C2;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerTrademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 20px;
+}
+
+.logos {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  
 }

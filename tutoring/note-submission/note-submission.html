@@ -4,8 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Paperized!</title>
+      <link rel="shortcut icon" type="image/jpg" href="../../photos/favicon.jpg"/>
     <link href="note-submission.css" rel="stylesheet" type="text/css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+        <link href="about.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
   </head>
   <body>
@@ -15,14 +22,13 @@
         <a href="../../about/about.html" class="logolink">
           <img src="../../photos/logo-small.jpg" alt="logo" style="height:60px;">
         </a>
-        <a class="active" href="../../about/about.html">About</a> 
+        <a href="../../about/about.html">About</a> 
         <a href="../../scholarship/scholarship.html">Scholarships</a>
 
       <!-- tutoring dropdown -->
       <div class="droptutoring">
         <button class="droptutorbtn"><a href="../tutoring.html">Tutoring</a></button>
           <div class="dropdown-tutor-content">
-            <a href="../mission/mission.html">Mission</a>
             <a href="../volunteer/volunteer.html">Volunteer</a>
             <a href="../need-help/need-help.html">Need help?</a>
             <a href="../note-submission/note-submission.html">Note submission</a>
@@ -30,7 +36,88 @@
           </div>
       </div>
     </div>
+    <section>
+      <!-- Side tabs -->
+      <div class="tab">
+        <button class="tablinks" onclick="openSubject(event, 'Math')" id="defaultOpen">Math📐</button>
+        <button class="tablinks" onclick="openSubject(event, 'Science')">Science🔬</button>
+        <button class="tablinks" onclick="openSubject(event, 'Literature')">Literature💬</button>
+      </div>
 
-  <script src="about.js"></script>
+      <div id="Math" class="tabcontent">
+        <form class="inputs">
+          <div class="enterText">
+            <label class="message">Please enter your details so we can credit sources accordingly!</label><br>
+            <input type="text" placeholder="Full Name" class='name'>
+            <input type="text" placeholder="Topic" class='topic'>
+            <input type="text" placeholder="Email" class='email'>
+            <input type="date" class='date'>
+            <input type="text" placeholder="Sources" class='sources'>
+            <input type="file" class='file'>
+          </div>
+          <button class = "submitBtn" >Submit</button>
+        </form>
+        
+        <div class = "container"></div>
+      </div>
+
+      <div id="Science" class="tabcontent">
+        <form class="inputs">
+          <div class="enterText">
+            <label class="message">Please enter your details so we can credit sources accordingly!</label><br>
+            <input type="text" placeholder="Full Name" class='name'>
+            <input type="text" placeholder="Topic" class='topic'>
+            <input type="text" placeholder="Email" class='email'>
+            <input type="date" class='date'>
+            <input type="text" placeholder="Sources" class='sources'>
+            <input type="file" placeholder: "Upload file(s)" class='file'>
+          </div>
+          <button class = "submitBtn" >Submit</button>
+        </form>
+        
+        <div class = "container"></div>
+      </div>
+
+      <div id="Literature" class="tabcontent">
+        <form class="inputs">
+          <div class="enterText">
+            <label class="message">Please enter your details so we can credit sources accordingly!</label><br>
+            <input type="text" placeholder="Full Name" class='name'>
+            <input type="text" placeholder="Topic" class='topic'>
+            <input type="text" placeholder="Email" class='email'>
+            <input type="date" class='date'>
+            <input type="text" placeholder="Sources" class='sources'>
+            <input type="file" placeholder: "Upload file(s)" class='file'>
+          </div>
+          <button class = "submitBtn" >Submit</button>
+        </form>
+        
+        <div class = "container"></div>
+      </div>
+    </section>
+
+     <!-- start of footer -->
+    <div class = "footer">
+      <a href="../about/about.html" class="logolink">
+          <img src="../../photos/logo-small.jpg" alt="logo" style="height:60px;">
+      </a>
+      <p class = "footerTrademark"> Trademarked 2021 ® </p>
+    
+      <a href = "https://www.instagram.com/paperizedstudy/"> 
+      <img class = "logos" src = "../../photos/instagram.png">
+      </a>
+
+      <!-- facebook link in progress -->
+      <a href = "https://www.facebook.com/"> 
+      <img class = "logos" src = "../../photos/facebook icon.png">
+      </a> 
+
+      <a href = "paperizedstudy@gmail.com"> 
+      <img class = "logos" src = "../../photos/gmail logo.png">
+      </a> 
+    </div>
+    <!-- end of footer -->
+
+    <script src="note-submission.js"></script>
   </body>
 </html>
